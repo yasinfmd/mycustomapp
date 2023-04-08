@@ -1,0 +1,15 @@
+.select-wrapper{
+    @apply flex flex-col relative;
+}
+.select{
+    @apply  bg-gray-50 border border-solid border-gray-400 rounded-md px-4 py-2 text-gray-900 flex justify-between items-center cursor-pointer
+}
+.select-context{
+    @apply absolute z-10  w-full mt-1 rounded-md shadow-lg py-2 bg-white ring-1 ring-black ring-opacity-5 overflow-y-auto max-h-40
+}
+.select-item{
+    @apply py-2 px-4 cursor-pointer text-gray-900;
+}
+.selected{
+    @apply bg-gray-200;
+}

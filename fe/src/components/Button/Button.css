@@ -1,0 +1,5 @@
+
+
+.button{
+    @apply flex items-center justify-center px-4 py-2 bg-white border border-solid border-gray-400 rounded-md text-gray-900;
+}

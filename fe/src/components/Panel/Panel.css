@@ -1,0 +1,8 @@
+.panel-wrapper{
+    @apply border border-black rounded-md shadow-md relative;
+}
+.panel-title{
+  @apply absolute bg-white text-lg text-gray-900;
+    top: -14px;
+    left: 8px;
+}

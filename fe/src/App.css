@@ -1,0 +1,4 @@
+
+.my-app{
+    @apply h-screen w-screen overflow-auto p-8;
+}
