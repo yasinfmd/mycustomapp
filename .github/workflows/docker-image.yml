@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Build the Docker image
       run: |
-        docker build . --file ./be/Dockerfile --tag ysndlklc/backend-demo
+        docker build ./be --file Dockerfile --tag ysndlklc/backend-demo
         docker push ysndlklc/backend-demo
 
   build-push-fe:
@@ -20,6 +20,6 @@ jobs:
     steps:
     - name: Build the Docker image
       run: |
-        docker build . --file ./fe/Dockerfile --tag ysndlklc/frontend-demo
+        docker build ./fe --file Dockerfile --tag ysndlklc/frontend-demo
         docker push ysndlklc/frontend-demo
       
