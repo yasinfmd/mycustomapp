@@ -1,0 +1,25 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-push-be:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build the Docker image
+      run: |
+        docker build . --file ./be/Dockerfile --tag ysndlklc/backend-demo
+        docker push ysndlklc/backend-demo
+
+  build-push-fe:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build the Docker image
+      run: |
+        docker build . --file ./fe/Dockerfile --tag ysndlklc/frontend-demo
+        docker push ysndlklc/frontend-demo
+      
