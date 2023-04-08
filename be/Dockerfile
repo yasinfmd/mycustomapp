@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm install -g jest
 RUN npm install
 
-COPY . .
+COPY ./be .
 
 
 ENV APP_PORT=5020
