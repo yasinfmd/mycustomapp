@@ -10,6 +10,7 @@ jobs:
   build-push-be:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
         docker build . --file /be/Dockerfile -t ysndlklc/backend-demo
@@ -18,6 +19,7 @@ jobs:
   build-push-fe:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Build the Docker image
       run: |
         docker build . --file /fe/Dockerfile -t ysndlklc/frontend-demo
